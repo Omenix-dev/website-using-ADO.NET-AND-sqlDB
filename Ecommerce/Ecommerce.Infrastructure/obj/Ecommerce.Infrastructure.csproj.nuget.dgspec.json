@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj": {}
+    "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
+    "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+        "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
         "projectName": "Ecommerce.Domain",
-        "projectPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+        "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\obj\\",
+        "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj": {
+    "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
+        "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
         "projectName": "Ecommerce.Infrastructure",
-        "projectPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
+        "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\obj\\",
+        "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
-                "projectPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj"
+              "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
+                "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj"
               }
             }
           }

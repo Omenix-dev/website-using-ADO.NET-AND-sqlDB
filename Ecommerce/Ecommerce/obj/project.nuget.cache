@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ll206JAKyaUyO+mXaQYICdLGgdvh9uz7SKFcwW8I3ULnvVCoqxHLqJiR1D9/aPAhX0tyhaqd/1/uq3jWX62HGg==",
+  "dgSpecHash": "SevyBzD8Poovz5ooOx0eYPkZn6nQnww2Gk18+p+RF2auvitcKAkxhWQxVw+fWbgqUvRnv9hlRtiUd2Jh5/+1IQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
+  "projectFilePath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W9gtqq3zIcI9QpgHsrizDlPCLif1ekeTFSJvNNh3sRhpw/9DxdbaS960zd/y+H4dj1H0jM88xjCUsIMm19u0Iw==",
+  "dgSpecHash": "yxGyTo5aFMQ1gQtMWnQpDBMsbWV8+/7nPKgGOGALaaeTERPookLflmBEHjReNRQHKfryHqOXbRBtJGtf8ZRjLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+  "projectFilePath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
