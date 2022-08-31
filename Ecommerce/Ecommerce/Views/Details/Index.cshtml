@@ -1,0 +1,180 @@
+﻿@model HomeProductViewModel;
+
+@{
+	ViewData["Title"] = "Details Page";
+	ViewBag.DiscountPrice = (Model.Product.Price * ((decimal)Model.Product.Discount/100)).ToString("0.00");
+}
+<style>
+	#detailsSideview div:nth-child(1),
+	#detailsSideview div:nth-child(2) div{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	#detailsSideview div:nth-child(2) div {
+		border:solid lightgrey 2px;
+		margin:0 1px;
+		height:90px;
+	}
+</style>
+
+
+<div class="Cont" style="background-color: ghostwhite;margin-left:-8px; height:40px;justify-content:center;align-items:center">
+	<span> <span style="color:dodgerblue">Home</span> / <span style="color:dodgerblue">Hot Deal</span> / <span>@Model.Product.Name</span></span>
+</div>
+
+<div class="Cont" style=" margin-top:30px">
+	<div class="center">
+		<div style="width:80%;display:flex; flex-direction:column">
+			<div style="display:flex;flex-direction:row">
+				<div id="detailsSideview" style="flex-grow:6;display:flex;flex-direction:column">
+					<div style="background-image:url('@Model.Product.Url');height:300px;
+					border-radius: 10px;"></div>
+					<div style="display:flex;flex-direction:row; margin-top:30px">
+						<div style="flex-grow:1; background-image:url('@Model.Product.Url')">
+						</div>
+						<div style="flex-grow:1;background-image:url('@Model.Product.Url')">
+						</div>
+						<div style="flex-grow:1;background-image:url('@Model.Product.Url')">
+						</div>
+						<div style="flex-grow:1;background-image:url('@Model.Product.Url')">
+						</div>
+					</div>
+				</div>
+
+				<div style="flex-grow:1; padding-left:40px">
+					<h2>@Model.Product.Name</h2>	
+					<div style="display:flex">
+						<div style="margin-right:20px">
+							<partial name="_ShowStarRatings" model="@Model.Product.Rating"/>
+						</div>
+						<span style="color:lightgrey;margin-right:20px">0 reviews</span>
+						<span style="color:dodgerblue;margin-right:20px">Submit a review</span>
+					</div>
+					<hr style="border:thin ghostwhite 0.2px" />
+					<div style="display:inline-flex;margin:15px 0px">
+						<span style="color:dodgerblue;font-weight:900;margin-right:10px">$@ViewBag.DiscountPrice</span>
+						<span style="color:lightgrey;text-decoration:line-through;margin-right:10px">$@Model.Product.Price</span>
+						<span style="color:coral;margin-right:10px">@Model.Product.Discount% off</span>
+					</div>
+					<div style="display:flex;flex-direction:row;font-size:80%">
+						<div style="display:flex;flex-direction:column">
+							<span style="margin-bottom:15px">
+								Availability: 
+							</span>
+							<span style="margin-bottom:15px">Category: </span>
+							<span style="margin-bottom:15px">Free Shipping:
+								@if	(Model.Product.Shipping)
+								{
+									<span>Yes</span>
+								}else{
+									<span>No</span>
+								}
+
+							</span>
+						</div>
+						<div style="display:flex;flex-direction:column">
+							<span style="margin-bottom:15px">@Model.Product.Availability</span>
+							<span style="margin-bottom:15px">@Model.Product.Category</span>
+						</div>
+					</div>
+					<hr style="border:thin ghostwhite 0.2px" />
+					<div>
+						<div style="display:flex">
+							<span style="margin-right:60px;font-size:80%;font-weight:700">Select Color:</span>
+							<div style="margin-left:15px;height:20px;width:20px;border-radius:100px;background-color:dodgerblue"></div>
+							<div style="margin-left:15px;height:20px;width:20px;border-radius:100px;background-color:red"></div>
+							<div style="margin-left:15px;height:20px;width:20px;border-radius:100px;background-color:black"></div>
+							<div style="margin-left:15px;height:20px;width:20px;border-radius:100px;background-color:yellow"></div>
+						</div>
+						<div style="display:inline-flex;margin-top:10px">
+							<span style="font-size:80%;font-weight:700;margin-right:120px">Size</span>
+							<select style="outline:none;width:100px;padding:5px 20px">
+								<option Selected>XS</option>
+								<option>S</option>
+								<option>M</option>
+								<option>L</option>
+							</select>
+						</div>
+					</div>
+					<hr style="border:thin ghostwhite 0.2px" />
+					<div style="display:flex;justify-content:space-between">
+						<div style="display:inline-flex;background-color:ghostwhite;padding:10px 20px">
+							<span style="color:dodgerblue">-</span>
+							<span style="margin:0 20px">0</span>
+							<span style="color:dodgerblue">+</span>
+						</div>
+						<button style="background-color:aquamarine;padding:10px 20px;color:white;border:none;border-radius:5px">
+							<span class="fa fa-cart-shopping"></span>
+							<span>Add To Cart</span>
+						</button>
+					</div>
+					<hr style="border:thin ghostwhite 0.2px" />
+					<div style="display:flex;margin:30px 0px 70px 0px;cursor:pointer">
+						<button style="outline:none;border:none;color:white;font-weight:600;flex-grow:1;border-radius:3px; margin-right:5px;padding:20px 30px; background-color:cornflowerblue"><span class="fa fa-facebook"></span>share on facebook</button>
+						<button style="outline:none;border:none;color:white;font-weight:600; flex-grow:1;border-radius:3px; margin-left:5px;padding:20px 30px; background-color:dodgerblue"><span class="fa fa-twitter"></span>share on twitter</button>
+					</div>
+				</div>
+			</div>
+
+			<div style="background-color:ghostwhite;padding:10px;border-radius:7px;margin-bottom:50px">
+				<h2>Product Information</h2>
+				<hr style="border:thin ghostwhite 0.2px" />
+				<div style="color:gray">
+					<p style="overflow-wrap:break-word">
+						@Model.Product.Description
+					</p>
+					
+					<p style="overflow-wrap:break-word">
+						@Model.Product.Description
+					</p>
+
+					<p >
+						@Model.Product.Description
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div style="width:20%;flex-grow:6!important;display:flex;padding-left:30px">
+			<div>
+				<h3 style="color:lightgrey">BEST SELLER</h3>
+				<div style="background-image:url('@Model.FirstSixBestSales[2].Url');background-size:contain;
+				height:300px;background-repeat:no-repeat;display:flex;align-items:flex-end">
+					<div style="display:flex;flex-direction:column;justify-content:center">
+						<h4 style="align-self:center" >@Model.FirstSixBestSales[2].Name</h4>
+						<div style="display:flex;justify-content:center">
+							<partial name="_ShowStarRatings" model="@Model.FirstSixBestSales[2].Rating" />
+						</div>
+						<div style="justify-content:center">
+							<span style="color:dodgerblue;font-weight:900;margin-right:5px">$299,43</span>
+							<span style="color:lightgrey;text-decoration:line-through;margin-right:5px">$534,33</span>
+							<span style="color:coral;margin-right:5px">24% off</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>
+
+<div class="Cont">
+	<h1>
+		RELATED PRODUCTS
+	</h1>
+</div>
+
+<!-- the majoe show case-->
+<div class="Cont">
+	<div class="center" style="flex-wrap:wrap">
+		@for(var item = 0; item < 4; item++){
+			<partial name="_FeaturedProductPartial" model="Model.FirstSixBestSales[item]" />
+		}
+	</div>
+</div>

@@ -1,0 +1,160 @@
+﻿@model HomeProductViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="Cont ImageShow" >
+	<div class="center">
+		<h1>Super Flash Sale <br> 50% Off</h1>
+	</div>
+</div>
+
+<div class="Cont Show">
+	<div class="center">
+		@foreach(var item in Model.FirstThreeBestSales)
+		{
+			<a asp-action="index" asp-controller="Details" asp-route-id="@item.Id" style="background-image:url(@item.Url);text-decoration:none" class="ShowItem">
+				<h3>@item.Name</h3>
+				<span>$@item.PriceDiscount.ToString("0.00")</span>
+				<p><i >$@item.Price</i><b>@item.Discount% off</b></p>
+			</a>
+
+		}
+	</div>
+</div>
+
+<div class="Cont" style="margin-top:300px!important">
+	<h1>
+		BEST SELLER
+	</h1>
+</div>
+
+<div class="Cont">
+	<div class="center" style="justify-Content;width:45%;font-size:23px">
+		<span style="color:#0099ff;text-decoration:underline">All</span>
+		<span>Bags</span>
+		<span>Sneakers</span>
+		<span>Belt</span>
+		<span>Sunglasses</span>
+	</div>
+</div>
+
+<!-- the majoe show case-->
+<div class="Cont">
+	<div class="center" style="flex-wrap:wrap">
+		@foreach(var item in Model.FirstSixBestSales){
+			<partial name="_FeaturedProductPartial" model="item" />
+		}
+		</div>
+	</div>
+</div>
+
+<div class="Cont">
+	<h3 style="text-decoration:underline;color:#336699; cursor:pointer" >LOAD MORE</h3>
+</div>
+
+<div class="Cont banner" style="margin-bottom:70px;">
+	<div class="center" style="color:white">
+		<div style="flex-grow:1;align-self:center">
+			<h1 style="font-size:50px">Addidas Men Running <br>Sneakers </h1>
+			<h4>Performance and design taken right to the edge</h4>
+			<div style="font-weight:700">
+				<span style="text-decoration: underline;">SHOP N</span><span>OW</span>
+			</div>
+		</div>
+		<div style="flex-grow:1;align-self:center;position:relative">
+			<img src="~/Images/bannerShoe.png" style="position:absolute;top:-320px;right:0px" width="710px" height="auto" alt="" />
+		</div>
+	</div>
+</div>
+
+<div class="Cont CustomerCare">
+	<div class="center">
+		<div>
+			<span class="fa fa-shipping-fast"></span>
+			<h2>FREE SHIPPING</h2>
+			<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+		</div>
+		<div>
+			<span class="fa fa-dollar-sign"></span>
+			<h2>100% REFUND</h2>
+			<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+		</div>
+		<div>
+			<span class="fa fa-teamspeak"></span>
+			<h2>SUPPORT 24/7</h2>
+			<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+		</div>
+	</div>
+</div>
+
+<div class="Cont" style="margin-top:100px!important;margin-bottom:70px!important">
+	<h1>
+		LASTEST NEWS
+	</h1>
+</div>
+
+<div class="Cont News_details">
+	<div class="center">
+		<div style="display:flex">
+			<img src="~/Images/nike.png" alt="" />
+			<div>
+				<span style="color:gray" class="date">01 Jan, 2015</span>
+				<span style="font-size:25px;font-weight:600;display:flex">Fashion Industry</span>
+				<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+			</div>
+		</div>
+		<div style="display:flex">
+			<img src="~/Images/figma.png" alt="" />
+			<div>
+				<span style="color:gray" class="date">01 Jan, 2015</span>
+				<span style="font-size:25px;font-weight:600;display:flex">Best Design Tools</span>
+				<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+			</div>
+		</div>
+		<div style="display:flex">
+			<img src="~/Images/kronos.png" alt="" />
+			<div>
+				<span style="color:gray" class="date">01 Jan, 2015</span>
+				<span style="font-size:25px;font-weight:600;display:flex">HR Community</span>
+				<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="Cont" style="margin-top:100px!important;margin-bottom:70px!important">
+	<h1>
+		FEATURED PRODUCTS
+	</h1>
+</div>
+
+<div class="Cont Featured_details">
+	<div class="center">
+		@foreach(var item in Model.NewSales){
+			<a asp-action="index" asp-controller="Details" asp-route-id="@item.Id" style="display:flex;text-decoration:none">
+				<img src=@item.Url width="200px" height = "auto" alt="" />
+				<div>
+					<div>
+						<h4>@item.Name</h4>
+						<div>
+							<partial name="_ShowStarRatings" model="item.Rating"/>
+						</div>
+						<div>
+							<span style="color:red">$@item.PriceDiscount</span>
+							<span style="text-decoration:line-through;color:grey">$@item.Price</span>
+						</div>
+					</div>
+				</div>
+			</a>
+		}
+
+		
+	</div>
+</div>
+
+<div class="Cont Search" style="margin-top:100px!important;margin-bottom:70px!important;display:inline-flex">
+	<input type="text" value="" style="border-radius: 5px 0 0 5px ;width:400px;border-color:#40BFFF;border-style:solid;outline:none;padding:10px" placeholder="Search query..." />
+	<button style="cursor:pointer;background-color:#40BFFF;color:white;border:none;padding:20px 25px;border-radius:0 5px 5px 0">Search</button>
+</div>

@@ -1,0 +1,156 @@
+﻿body {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+/*main styling code*/
+.Cont {
+    width:inherit;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+}
+.center {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*this section is used to style the show slider*/
+.ImageShow {
+    margin-left:-10px!important;
+    background-image: url("../Images/backImage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+.ImageShow .center{
+    align-items:center;
+    font-size:35px;
+    color:white;
+}
+
+/*this thead first show section that is the third row*/
+.Show > .center {
+    position: absolute;
+    top: 650px;
+    height: 358px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px !important;
+    box-shadow:  4px 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ShowItem {
+    display:flex;
+    height:inherit;
+    flex-grow:1;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    font-weight:900;
+    
+}
+.ShowItem p{
+    display:inline;
+    align-self:flex-start;
+    color:coral;
+    justify-self:self-start;
+}
+.ShowItem p i{
+    color:gray;
+    text-decoration:line-through;
+}
+.ShowItem h3 {
+    margin-left:20px;
+    font-family:Consolas;
+    color: #336699;
+    font-size:20px;
+}
+.ShowItem span{
+    align-self:flex-end;
+/*    justify-self:flex-end;*/
+    color:#0099ff;
+    font-size:25px;
+}
+.ShowItem:nth-child(1){
+    background-image:url("../Images/blackbag.png");
+}
+.ShowItem:nth-child(2) {
+    background-image: url("../Images/yellowShow.png");
+}
+.ShowItem:nth-child(3) {
+    background-image: url("../Images/RedShoe.png");
+}
+
+/*this isthe seciond showcase*/
+
+.storeItem div:nth-child(1){
+    height:273px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+.storeItem div:nth-child(2) {
+    margin-top:-20px;
+}
+
+.storeItem div:nth-child(2) h4,
+.storeItem div:nth-child(2) div{
+    display:flex;
+    justify-content:center;
+}
+
+.storeItem div:nth-child(2) h4 {
+    color: #336699;
+    font-weight:700;
+}
+.storeItem div:nth-child(2) div img{
+    width:15px;
+    height:auto;
+}
+.storeItem div:nth-child(2) div
+{
+    margin-bottom:15px;
+    justify-content:space-around;
+}
+    .storeItem div:nth-child(2) div span:nth-child(2){
+        color:coral;
+    }
+    .storeItem div:nth-child(2) div i {
+        text-decoration: line-through;
+        color: gray;
+    }
+    .storeItem div:nth-child(2) div span {
+        color: #0099ff;
+    }
+.storeItem {
+    width: 24% !important;
+}
+.banner {
+    height: 550px;
+    background-color: #0099ff;
+    margin-left:-8px;
+}
+.CustomerCare span{
+    color: saddlebrown;
+    font-size: 75px;
+    display:flex;
+    justify-content:center;
+}
+
+.CustomerCare>div>div>div,
+.CustomerCare h2{
+    color:black;
+    display:flex;
+    justify-content:center;
+    width:190px;
+}
+.News_details img {
+    width: 140px !important;
+    height: 70px;
+}
+

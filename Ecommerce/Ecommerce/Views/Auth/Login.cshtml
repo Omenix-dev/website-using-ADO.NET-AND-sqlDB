@@ -1,0 +1,36 @@
+﻿@model UserLoginDetails;
+@{
+    ViewData["Title"] = "Login Page";
+    Layout = "~/Views/Shared/_LayoutAuth.cshtml";
+}
+
+<style>
+	input {
+		font-size: 20px;
+		padding: 10px;
+		border-color: transparent transparent dodgerblue transparent;
+		margin-top: 30px;
+		outline: none;
+		width: 100%;
+	}
+</style>
+
+<form method="post" asp-action="Login" style="width:100%">
+	<h1 style="font-family:'Agency FB';font-weight:600">Register the Customer</h1>
+	
+	<input asp-for="Email" placeholder="Enter Email" autofocus type="email" value="@Model.Email" />
+	<span asp-validation-for="Email" style="color:red" ></span>
+	<input asp-for="Password" placeholder="Enter Password" type="password" value="@Model.Password" />
+	<span asp-validation-for="Email" style="color:red" ></span>
+	<div style="width:100%;margin-left:12px">
+		<button style="width:inherit;margin-top:40px;background-color:dodgerblue;
+			font-size:30px;padding:10px 20px;color:white; border:none; border-radius:5px;
+			justify-self:center;cursor:pointer">
+			Login
+		</button>
+	</div>
+	<div style="display:flex;justify-content:space-between;font-size:15px;font-weight:600;color:forestgreen;margin-top:20px">
+		<a asp-action="Index" asp-controller="home" style="text-decoration:none" style="margin-left:20px"><span>HomePage</span></a>
+		<a asp-action="Register" style="text-decoration:none"><span>Register</span></a>	
+	</div>
+</form>

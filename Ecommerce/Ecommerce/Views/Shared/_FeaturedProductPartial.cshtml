@@ -1,0 +1,16 @@
+﻿@model ProductDisplayDTO;
+
+<a asp-action="index" asp-controller="Details" asp-route-id="@Model.Id" style="text-decoration:none" class="storeItem">
+	<div style="background-image:url(@Model.Url);">
+	</div>
+	<div>
+		<h4>@Model.Name</h4>
+		<div>
+			<partial name="_ShowStarRatings" model="Model.Rating"  />
+		</div>
+		<div>
+			<span>$@Model.PriceDiscount</span>
+			<span><i>$@Model.Price </i>@Model.Discount% off</span>
+		</div>
+	</div>
+</a>
