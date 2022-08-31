@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IHiKqA8gwDndp0b/3O/GLEu8Pt1oUAhjhWvqxHhe82Rln/5MyIJM9HEz+0+w58zn1CaW4BQp/obgrraeEEcdGQ==",
+  "dgSpecHash": "PCrzcSss/C+H75Uv46jTXQoS5AWCadHSqFTngSPtOnb7jATUSUv7UyUwEZJE9wXYnFRKMELzly5xn+sfYLXR6Q==",
   "success": true,
-  "projectFilePath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

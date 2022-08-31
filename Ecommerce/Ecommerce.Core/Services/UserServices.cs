@@ -23,10 +23,10 @@ namespace Ecommerce.Core.Services
 		/// <param name="email"></param>
 		/// <param name="password"></param>
 		/// <returns>Task<User></returns>
-		public async Task<User> RegisterUser(UserRegistration user)
+		public async Task<User> RegisterUserAsync(UserRegistration user)
 		{
 			User newUser = new User(user.Email,SHA.ComputeSHA256Hash(user.Password));
-			bool IsRegistered = await _repository.Register(newUser);
+			bool IsRegistered = await _repository.RegisterAsync(newUser);
 			if (IsRegistered)
 			{
 				return newUser;
@@ -40,9 +40,9 @@ namespace Ecommerce.Core.Services
 		/// <param name="email"></param>
 		/// <param name="password"></param>
 		/// <returns>string</returns>
-		public async Task<string> Login(UserLoginDetails userDetail)
+		public async Task<string> LoginAsync(UserLoginDetails userDetail)
 		{
-			var allUser = await _repository.Login();
+			var allUser = await _repository.LoginAsync();
             var user = allUser.FirstOrDefault(x => x.Email == userDetail.Email && x.Password == SHA.ComputeSHA256Hash(userDetail.Password));
             if (user != null)
             {

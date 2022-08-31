@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Test\\Ecommerce.Test.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Test\\Ecommerce.Test.csproj",
       "projectName": "Ecommerce.Test",
-      "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Test\\Ecommerce.Test.csproj",
+      "projectPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Test\\Ecommerce.Test.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Test\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

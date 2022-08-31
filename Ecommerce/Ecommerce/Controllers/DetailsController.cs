@@ -17,12 +17,12 @@ namespace Ecommerce.Controllers
         {
             if (HttpContext.Session.GetString("userId") != null)
             {
-                var productDetails = await _productServices.GetProductById(id);
+                var productDetails = await _productServices.GetProductByIdAsync(id);
                 HomeProductViewModel ViewData = new HomeProductViewModel();
                 ViewData.Product = productDetails;
                 ViewData.SessionId = HttpContext.Session.GetString("userId");
                 ViewData.Email = HttpContext.Session.GetString("userEmail");
-                ViewData.FirstSixBestSales = await _productServices.FirstSixBestSales();
+                ViewData.FirstSixBestSales = await _productServices.FirstSixBestSalesAsync();
                 return View(ViewData);
             }
             return RedirectToAction("Login","Auth");

@@ -22,7 +22,7 @@ namespace Ecommerce.Controllers
         {
             if(ModelState.IsValid)
             {
-                var userId = await _userServices.Login(user);
+                var userId = await _userServices.LoginAsync(user);
                 if (userId != "NOT_FOUND")
                 {
                     HttpContext.Session.SetString("userId", userId);
@@ -46,7 +46,7 @@ namespace Ecommerce.Controllers
             }
             if (ModelState.IsValid)
             {
-                var userInfo = await _userServices.RegisterUser(user);
+                var userInfo = await _userServices.RegisterUserAsync(user);
                 if (userInfo != null)
                 {
                     HttpContext.Session.SetString("userId", userInfo.UserId);

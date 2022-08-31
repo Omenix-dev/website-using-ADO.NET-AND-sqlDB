@@ -24,16 +24,3 @@ C:\Users\hp\Documents\decagon task\week 8 task\Ecommerce - Copy\Ecommerce.Infras
 C:\Users\hp\Documents\decagon task\week 8 task\Ecommerce - Copy\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.csproj.CopyComplete
 C:\Users\hp\Documents\decagon task\week 8 task\Ecommerce - Copy\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.dll
 C:\Users\hp\Documents\decagon task\week 8 task\Ecommerce - Copy\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.pdb
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\bin\Debug\netcoreapp3.1\Ecommerce.Infrastructure.deps.json
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\bin\Debug\netcoreapp3.1\Ecommerce.Infrastructure.dll
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\bin\Debug\netcoreapp3.1\Ecommerce.Infrastructure.pdb
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\bin\Debug\netcoreapp3.1\Ecommerce.Domain.dll
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\bin\Debug\netcoreapp3.1\Ecommerce.Domain.pdb
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.csproj.AssemblyReference.cache
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.AssemblyInfoInputs.cache
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.AssemblyInfo.cs
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.csproj.CoreCompileInputs.cache
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.csproj.CopyComplete
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.dll
-\\wsl.localhost\Ubuntu\home\omenix\Week-8-assignment\week 8 task\Ecommerce\Ecommerce.Infrastructure\obj\Debug\netcoreapp3.1\Ecommerce.Infrastructure.pdb

@@ -27,6 +27,7 @@ namespace Ecommerce.Core.ViewModel
             SessionId = sessionId;
             Email = email;
         }
+        // non parameter constructor
         public HomeProductViewModel()
         {
 

@@ -5,7 +5,7 @@ namespace Ecommerce.Core.IServices
 {
     public interface IUserServices
     {
-        Task<string> Login(UserLoginDetails userDetail);
-        Task<User> RegisterUser(UserRegistration user);
+        Task<string> LoginAsync(UserLoginDetails userDetail);
+        Task<User> RegisterUserAsync(UserRegistration user);
     }
 }

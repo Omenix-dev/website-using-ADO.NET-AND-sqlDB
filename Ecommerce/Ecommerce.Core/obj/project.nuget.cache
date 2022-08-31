@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sDR0FxMCCzpgLEiuj1/BD32/EhKYSZpfQcKWyW5BhNR7J4EoY5PJqzUfyuzeW+8dSEelINLmMAoJyF+poGlyLw==",
+  "dgSpecHash": "+oWJGl/9tCy1pWxG88dJ/hg8ZKKzicPTxSTiINSWs5huobhSLmBpqgfTxGVglmqNi94+TpgE3p1xwZD38zmdIQ==",
   "success": true,
-  "projectFilePath": "\\\\wsl.localhost\\Ubuntu\\home\\omenix\\Week-8-assignment\\week 8 task\\Ecommerce\\Ecommerce.Core\\Ecommerce.Core.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Documents\\decagon task\\week 8 task\\Ecommerce\\Ecommerce.Core\\Ecommerce.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\easyencryption\\1.0.2\\easyencryption.1.0.2.nupkg.sha512",

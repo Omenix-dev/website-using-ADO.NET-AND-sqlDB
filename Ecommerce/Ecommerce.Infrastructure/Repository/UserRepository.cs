@@ -26,7 +26,7 @@ namespace Ecommerce.Infrastructures.Repository
         /// </summary>
         /// <param name="user"></param>
         /// <returns>Task<bool></returns>
-        public async Task<bool> Register(User user)
+        public async Task<bool> RegisterAsync(User user)
         {
             var connectionString = _configuration.GetSection("ConnectionStrings:Default").Value;
             try
@@ -53,7 +53,7 @@ namespace Ecommerce.Infrastructures.Repository
                 return false;
             }
         }
-        public async Task<List<User>> Login()
+        public async Task<List<User>> LoginAsync()
         {
             var connectionString = _configuration.GetSection("ConnectionStrings:Default").Value;
             try

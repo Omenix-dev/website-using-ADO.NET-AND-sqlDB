@@ -6,7 +6,7 @@ namespace Ecommerce.Infrastructures.IRepository
 {
     public interface IUserRepository
     {
-        Task<List<User>> Login();
-        Task<bool> Register(User user);
+        Task<List<User>> LoginAsync();
+        Task<bool> RegisterAsync(User user);
     }
 }

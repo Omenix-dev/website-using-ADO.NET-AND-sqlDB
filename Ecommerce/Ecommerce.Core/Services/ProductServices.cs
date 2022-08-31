@@ -24,7 +24,7 @@ namespace Ecommerce.Core.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Product</returns>
-        public async Task<Product> GetProductById(string id)
+        public async Task<Product> GetProductByIdAsync(string id)
         {
             var allproductDetail = await _repository.GetAllProductAsync();
             return allproductDetail.FirstOrDefault(x => x.Id == id);
@@ -56,7 +56,7 @@ namespace Ecommerce.Core.Services
         /// this method return the first three sales with highest discount
         /// </summary>
         /// <returns>Task<List<ProductDisplayDTO>></returns>
-        public async Task<List<ProductDisplayDTO>> FirstThreeBestSales()
+        public async Task<List<ProductDisplayDTO>> FirstThreeBestSalesAsync()
         { 
             var productItems = await GetAllProductsAsync();
             if (productItems != null)
@@ -67,7 +67,7 @@ namespace Ecommerce.Core.Services
         /// this method return the first six sales with highest discount
         /// </summary>
         /// <returns>Task<List<ProductDisplayDTO>></returns>
-        public async Task<List<ProductDisplayDTO>> FirstSixBestSales()
+        public async Task<List<ProductDisplayDTO>> FirstSixBestSalesAsync()
         {
             var productItems = await GetAllProductsAsync();
             if(productItems != null)
@@ -78,7 +78,7 @@ namespace Ecommerce.Core.Services
         /// this method return the first three items that has been recently added
         /// </summary>
         /// <returns>Task<List<ProductDisplayDTO>></returns>
-        public async Task<List<ProductDisplayDTO>> NewSales()
+        public async Task<List<ProductDisplayDTO>> NewSalesAsync()
         {
             var productItems = await GetAllProductsAsync();
             if( productItems != null)

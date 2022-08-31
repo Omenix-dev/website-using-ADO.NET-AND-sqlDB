@@ -20,9 +20,9 @@ namespace Ecommerce.Controllers
         public async Task<IActionResult> Index()
         {
             var homeViewModel = new HomeProductViewModel(
-                                await _productServices.FirstThreeBestSales(),
-                                await _productServices.FirstSixBestSales(), 
-                                await _productServices.NewSales(),
+                                await _productServices.FirstThreeBestSalesAsync(),
+                                await _productServices.FirstSixBestSalesAsync(), 
+                                await _productServices.NewSalesAsync(),
                                 HttpContext.Session.GetString("userId"),
                                 HttpContext.Session.GetString("userEmail")); 
             return View(homeViewModel);
